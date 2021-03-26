@@ -1,0 +1,17 @@
+package com.mcgroupproject.lecture07animation;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.ImageView;
+
+public class ImageActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_image);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.animate().rotation(720).scaleX(0.5f).scaleY(0.5f).setDuration(2000);
+    }
+}
